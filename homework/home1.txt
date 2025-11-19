@@ -1,0 +1,17 @@
+create table movies(movie_name varchar,ticket int,persons int,movie_type varchar,seatno int)
+
+insert into movies values('aanpavampollathadhu',190,2,'loveflim',56),('joe',100,2,'love',56),
+('master',250,3,'blast',89),('kanchana',180,8,'horror',90)
+insert into movies values('theri',120,2,'action',67),('amaran',300,2,'feelings',78),('vikram',100,4,'action',67)
+
+select * from movies
+
+update movies set persons = 10 where movie_type = 'horror'
+
+select persons from movies where persons = 2
+ 
+delete  from movies where persons = 2
+returning*;
+delete from movies where ticket < 200 and persons = 2
+
+truncate table movies
