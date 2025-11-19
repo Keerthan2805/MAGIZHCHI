@@ -1,0 +1,39 @@
+create table relation(name varchar,relative varchar)
+
+create table home(blood char,area varchar)
+
+select * from relation
+
+select * from home
+
+create or replace function authority(blood_grp char,live_area varchar ,ourfam_name varchar,blood_rel varchar) 
+returns varchar as $$
+declare
+res varchar;
+begin
+insert into home values(blood_grp,live_area);
+insert into relation values(ourfam_name,blood_rel);
+res :='we are families';
+return res;
+end;
+$$ language plpgsql;
+
+select authority('A','sholavandhan','keerthana','akka');
+
+update home set blood = 'b' where area = 'sholavandhan'
+
+create or replace function update(b1 char,town varchar,f_name varchar,b_rel varchar)
+returns int as $$
+declare
+updated_rows int;
+begin
+update home set blood = b1 where area = town;
+update relation set name = f_name where relative = b_rel;
+
+get diagnostics updated_rows = Row_Count;
+return updated_rows;
+end;
+$$ language plpgsql;
+
+
+select update('O','sholavandhan','anadhu','akka');
