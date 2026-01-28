@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    
+    >
+    <h1>Form Design</h1>
+    <label>Name</label>
+    <input type="text" required><br>
+    <br>
+    <label>Age</label>
+    <input type="int" required>
+    <br>
+    <br>
+    <label>Dob</label>
+    <input type="date" required>
+    <br><br>
+    <label>Email</label>
+    <input type="text" required><br>
+    <br>
+    <label>Password</label>
+    <input type="password" required><br>
+    <br>
+    <label>Address</label>
+   <input type="textarea">
+   <br>
+   <br>
+   <label>Gender:</label>
+    <input type="radio"  value="female" name="gender">female
+    <input type="radio"  value="male" name="gender">male
+    <input type="radio" value="others"  name="gender">others
+    <br>
+    <br>
+    <label>Education</label>
+    <select>
+        <option>BCA required</option>
+        <option>Computer Science required</option>
+        <option>IT required</option>
+
+    </select>
+    <br>
+    <br>
+    <label>College</label>
+    <select>
+        <option>Sri Meenakshi College</option>
+        <option>Thiyagaraja College</option>
+        <option>American College</option>
+   </select>
+   <br>
+   <br>
+   <label>Course</label>
+   <select>
+    <option>Java Full Stack</option>
+    <option>Python</option>
+    <option>C,C++</option>
+   </select>
+   <br>
+    <br>
+    <label>Skills</label>
+    <input type="checkbox">JAVA
+    <input type="checkbox">HTML
+    <input type="checkbox">DATABASE
+    <input type="checkbox">CSS
+    <input type="checkbox">JAVASCIRIPT
+<br><br>
+<label>Experience</label>
+<input type="range">
+<br>
+<br>
+<label>Hobbies</label>
+<input type="checkbox" value="Problem Solving">Problem Solving
+<input type="checkbox" value="Reading books">Reading books
+<input type="checkbox" value="Self study">Self study
+<input type="checkbox" value="Listening music">Listening music
+<br> 
+<br>
+<label>Upload Resume</label>
+<input type="file">
+<br>
+<br>
+<button>submit</button>   
+<button>reset</button>
+
+</body>
+</html>
