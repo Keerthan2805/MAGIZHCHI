@@ -1,0 +1,35 @@
+public class WheelerFind {
+    public void wheels()
+    {
+     int vehicles = 200;
+     int wheel = 540;
+           int asumev ;
+        int ew;
+        int fourw = 0;
+        int twow = 0;
+     if(vehicles > 0 && wheel > 0)
+     {
+       asumev = vehicles * 2;                                 //asume vehicleinto 2 wheeler
+       ew = wheel - asumev;                           //calculate extr wheels
+      
+//        System.out.println(ew);
+       fourw = ew /2;
+       twow = vehicles - fourw;
+         
+     }
+     if(twow != 0 && fourw != 0)
+     {
+         System.out.println("twowheeler=" +twow+" "+"fourwheeler"+fourw+" " );
+     }
+     else
+     {
+         System.out.println("not possible");
+     }
+    }
+    public static void main(String[] args) {
+        WheelerFind wf = new WheelerFind();
+        wf.wheels();
+    }
+        
+    }
+    
