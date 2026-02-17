@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="grid.css">
+</head>
+<body>
+   <div class="container">
+    <header>Header</header>
+    <aside>Sidebar</aside>
+    <main>Main Content</main>
+    <footer>Footer</footer>
+</div>
+</body>
+</html>
+
+*{
+    margin: 0%;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: purple; */
+}
+.container{
+    /* margin: 20px; */
+display: grid;
+grid-template-areas: "header header" "side main" "footer footer";
+grid-template-columns: 350px 1fr;
+grid-template-rows: 80px 1fr 60px;
+height: 100vh;
+/* background-color: rgba(196, 12, 98, 0.518); */
+}
+header{
+    grid-area: header;
+    display: grid;
+    background-color: rgb(236, 49, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    /* padding: 10px; */
+}
+aside{
+    grid-area: side;
+display: grid;
+display: flex;
+background-color: plum;
+align-items: center;
+justify-content: center;
+ /* padding: 10px; */
+}
+main{
+    grid-area: main;
+    display: grid;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: darkgreen;
+    /* padding: 10px; */
+}
+footer{
+    display: grid;
+    grid-area: footer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: pink;
+    align-items: center;
+     /* padding: 10px; */
+}
