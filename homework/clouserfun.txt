@@ -1,0 +1,32 @@
+function calc()
+{
+    let res = 0;
+    function add(num)
+    {
+           res += num;;
+           return res; 
+    }
+
+
+    function sub(num)
+    {
+          res -= num;
+          return res;
+    }
+    function multi(num)
+    {
+        res = res * num;
+        return num;
+    }
+    function div(num)
+    {
+        res = res / num;
+        return res;
+    }
+    return {add,sub,multi,div};
+}
+const cl = calc();
+console.log(cl.add(10));
+console.log(cl.sub(5));
+console.log(cl.multi(10));
+console.log(cl.div(5));
