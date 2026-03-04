@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <link rel="stylesheet" href="loginjs.css">
+    <script src="logicjs.js"></script>
+</head>
+<body>
+    <div class="sty">
+        <label for="">Name</label>  <input id="name" type="text">
+        
+        <label for="">Age</label>  <input id="age"  type="text">
+        
+        <label for="">Gender</label>  <input id="gen" type="text">
+     
+        <label for="">Contact</label>  <input  id="contact" type="text">
+        
+        <label for="">Address</label>  <input id="addres" type="text">
+      
+        <label for="">Email</label>  <input  id= "mail" type="text">
+       
+        <p id="para">Educational Details :</p>
+        <label for="">Degree</label> <input  id="degree" type="text">
+        
+        <label for="">Passed Out</label> <input  id="year" type="text">
+        
+        <label for="">Skills</label> <input  id="skill" type="text">
+      
+        <button onclick="clickbtn()" id="btn">Submission</button>
+
+    </div>
+</body>
+</html>
+
+.sty {
+    width: 500px;
+    margin-top: 70px;
+    margin-left: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.sty label {
+    display: inline-block;
+    width: 150px;   /* Same width for all labels */
+    margin-bottom: 10px;
+}
+
+.sty input {
+    width: 220px;   /* Same width for all inputs */
+    margin-bottom: 10px;
+}
+.sty button{
+
+
+    display: block;
+    margin: 20px auto;
+}
+/* body{
+    background-image:url("https://i.pinimg.com/736x/68/6b/43/686b4353afe7563c1c54f725c0d2fa41.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+} */
+
+
+function clickbtn()
+{
+    const val1 = document.getElementById('name').value;
+    const val2 = document.getElementById('age').value;
+    const val3 = document.getElementById('gen').value;
+    const val4 = document.getElementById('contact').value;
+    const val5 = document.getElementById('addres').value;
+    const val6 = document.getElementById('mail').value;
+    const val7 = document.getElementById('degree').value;
+    const val8 = document.getElementById('skill').value;
+    document.getElementById('btn').innerHTML =
+     "Name: " + val1 + "<br>" +
+        "Age: " + val2 + "<br>" +
+        "Genget: " + val3 + "<br>" +
+         "Contact: " + val4 + "<br>" +
+        "Address: " + val5 + "<br>" +
+        "Email: " + val6 + "<br>" +
+         "Degree: " + val7 + "<br>" +
+          "Skills: " + val8 + "<br>";
+
+}
+
